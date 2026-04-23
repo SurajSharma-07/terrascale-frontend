@@ -14,7 +14,7 @@ function App() {
         language: 'python',
         code: code
       });
-      setOutput(response.data.output || response.data.error);
+      setOutput(response.data.stdout || response.data.stderr || response.data.error || "Execution completed with no output.");
     } catch (err) {
       setOutput("Error: Could not connect to AWS Engine.");
     }

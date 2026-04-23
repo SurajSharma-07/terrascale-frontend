@@ -10,7 +10,7 @@ function App() {
   const runCode = async () => {
     setLoading(true);
     try {
-      const response = await axios.post('http://YOUR_AWS_IP:5000/execute', {
+      const response = await axios.post('http://13.220.238.29:5000/execute', {
         language: 'python',
         code: code
       });

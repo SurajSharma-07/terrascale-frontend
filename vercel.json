@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/execute",
+      "destination": "http://13.220.238.29:5000/execute"
+    }
+  ]
+}
